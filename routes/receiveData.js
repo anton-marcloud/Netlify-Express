@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Get Articles Page
-router.get('/receivedata', function(req, res){
+router.get('/', function(req, res){
 
 
 
@@ -28,9 +28,11 @@ router.get('/receivedata', function(req, res){
   const tokenType = req.params.token_type;
   const state = req.params.state;
 
+  console.log(req.params);
 
 
-  res.render('receivedData', {accessToken:accessToken,refreshToken:refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
+
+  res.render('receiveData', {accessToken:accessToken,refreshToken:refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
 });
 
 module.exports = router;
