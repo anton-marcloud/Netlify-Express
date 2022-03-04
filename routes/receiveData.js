@@ -28,7 +28,9 @@ router.get('/', function(req, res){
   const tokenType = req.params.token_type;
   const state = req.params.state;
 
-  res.render('receivedData', {accessToken,refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
+
+
+  res.render('receivedData', {accessToken:accessToken,refreshToken:refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
 });
 
 module.exports = router;
