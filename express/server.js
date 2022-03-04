@@ -19,8 +19,8 @@ router.get('/', (req, res) => {
 router.get('/triggerAuth', function(req, res){
   res.sendFile('triggerAuth.html', { root: views });
 });
-router.get('/receiveData', function(req, res){
-  res.sendFile('receiveData.html', { root: views });
+router.get('/receivedata', function(req, res){
+  res.sendFile('receivedata.html', { root: views });
 });
 
 

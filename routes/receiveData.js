@@ -32,7 +32,11 @@ router.get('/', function(req, res){
 
 
 
-  res.render('receiveData', {accessToken:accessToken,refreshToken:refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
+  res.status(400).json({accessToken,refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state})
+
+
+
+  //res.render('receiveData', );
 });
 
 module.exports = router;
