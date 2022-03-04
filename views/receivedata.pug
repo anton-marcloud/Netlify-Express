@@ -3,18 +3,20 @@ extends partials/header
 
 
 block content
-  script.
-    var arr = document.location.hash.split('&');
-    for (let i = 0; i < arr.length; i++) {
-      var disp = arr[i].split('=');
-      document.querySelector('.lead').innerHTML += arr[i].split('=')[0] + ' :  ' + arr[i].split('=')[1] + '<br/>';
-    }
+
   // Begin page content
   main.container(role='main')
     h1.mt-5 Receive Data
     p.lead _
     p= accessToken
     p= refreshToken
+
+    script.
+      var arr = document.location.hash.split('&');
+      for (let i = 0; i < arr.length; i++) {
+        var disp = arr[i].split('=');
+        document.querySelector('.lead').innerHTML += arr[i].split('=')[0] + ' :  ' + arr[i].split('=')[1] + '<br/>';
+      }
 
     include partials/footer
     
