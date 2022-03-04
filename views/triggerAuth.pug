@@ -1,0 +1,14 @@
+extends partials/header
+
+block content
+  // Begin page content
+  main.container(role='main')
+    h1.mt-5 Trigger Auth
+    a(href='https://login.salesforce.com/services/oauth2/authorize?response_type=token&\n' +
+    '    client_id=3MVG9GYWKbMgBvbw91VPm4WOW331O_jWrre5KwH4GrLfS.26eUH4xBkCxbRQA1qAcy4NcVPTK9JiwwI7ZjlEG&\n' +
+    '    redirect_uri=https://jolly-noether-2ee740.netlify.app/receivedata&\n' +
+    '    state=custom') Authorize with Salesforce
+    p
+
+  include partials/footer
+    

@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Get Articles Page
 router.get('/', function(req, res){
-  res.render('page2');
+  res.render('triggerAuth');
 });
 
 module.exports = router;

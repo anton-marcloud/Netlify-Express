@@ -1,0 +1,12 @@
+extends partials/header
+
+block content
+  // Begin page content
+  main.container(role='main')
+    h1.mt-5 Receive Data
+    p.lead Data
+    p= accessToken
+    p= refreshToken
+
+    include partials/footer
+    

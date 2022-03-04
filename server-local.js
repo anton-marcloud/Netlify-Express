@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 });
 
 // Route Files.
-let page1 = require('./routes/page1');
-let page2 = require('./routes/page2');
+let page1 = require('./routes/triggerAuth');
+let page2 = require('./routes/receiveData');
 let page3 = require('./routes/page3');
 let page4 = require('./routes/page4');
 app.use('/page1', page1);
