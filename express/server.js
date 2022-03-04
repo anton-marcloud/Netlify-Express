@@ -47,7 +47,7 @@ router.get('/receivedata', function(req, res){
 
 
 
-   res.status(400).json({accessToken,refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state})
+   res.status(400).json({accessToken,refreshToken,instanceUrl,id,issuesAt,signature,scope,tokenType,state});
 
 
 
